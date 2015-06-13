@@ -30,6 +30,10 @@
       <%= addresses_form.text_field :street %><br />
       <%= addresses_form.label :tel, "tel" %>
       <%= addresses_form.text_field :tel %><br />
+      <% if @user.persisted? %>
+        <%= addresses_form.check_box :_destroy %>
+        <%= addresses_form.label :_destroy, "destroy" %><br />
+      <% end %>
     <% end %>
   </div>
 
