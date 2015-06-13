@@ -10,4 +10,5 @@ class Address < ActiveRecord::Base
   validates :city,     presence: true
   validates :street,   presence: true
   validates :tel,      presence: true
+
 end
